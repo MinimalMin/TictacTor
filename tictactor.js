@@ -2,7 +2,7 @@ function result(TicTacToe){
     row1 = TicTacToe[0]
     row2 = TicTacToe[1]
     row3 = TicTacToe[2]
-      console.log(row1.find(check))
+
       casewin1 = row1[0]+row1[1]+row1[2]
       casewin2 = row2[0]+row2[1]+row2[2]
       casewin3 = row3[0]+row3[1]+row3[2]
@@ -26,3 +26,5 @@ function result(TicTacToe){
       }
   
   }
+
+  module.exports = result;
