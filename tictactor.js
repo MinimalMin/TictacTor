@@ -14,15 +14,36 @@ function result(TicTacToe){
       function check(number) {
           return   number < 1;
       }
+
+      x = 0;
+      o = 0;
+      r_null = 0;
+      draw = 0;
   
       if(row1.find(check) == 0|| row2.find(check) == 0 || row3.find(check) == 0){
-          return null
+          r_null = 1
+         
       }else if(casewin1 == 3 || casewin2 == 3 || casewin3 == 3 || casewin4 == 3 || casewin5 == 3 || casewin6 == 3 || casewin7 ==3 ){
-          return "X Win";
+          x = 1
+        
       }else if(casewin1 == 6 || casewin2 == 6 || casewin3 == 6 || casewin4 == 6 || casewin5 == 6 || casewin6 == 6 || casewin7 == 6 ){
-          return "O Win";
+          o = 1
+        
       } else{
-          return "Draw"
+          draw = 1
+          
+      }
+
+      if(r_null == 1){
+        return null
+      }else if( x == 1 && o == 0){
+        return "X Win";
+      }else if( x == 0 && o == 1){
+        return "O Win";
+      }else if( x == 1 && o == 1){
+        return "Draw"
+      }else{
+        return "Draw"
       }
   
   }

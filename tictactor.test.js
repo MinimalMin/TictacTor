@@ -31,6 +31,10 @@ test('tictactor [[1,2,0],[2,0,1],[0,1,0]] to equal null', () => {
     expect(tictactor([[1,2,1],[2,1,1],[2,1,2]])).toBe('Draw');
   });
 
+  test('tictactor [[1,2,1],[1,2,1],[1,2,2]] to equal Draw', () => {
+    expect(tictactor([[1,2,1],[2,1,1],[2,1,2]])).toBe('Draw');
+  });
+
 
 
   
